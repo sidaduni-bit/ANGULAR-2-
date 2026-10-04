@@ -1,0 +1,27 @@
+.main-container {
+  width: 400px;
+  height: 400px;
+  background-color: orange;
+  box-sizing: border-box;
+}
+
+mat-card-content {
+  height: 330px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.dynamic-content {
+  padding: 10px;
+}
