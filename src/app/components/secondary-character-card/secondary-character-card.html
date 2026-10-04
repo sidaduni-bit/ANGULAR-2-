@@ -1,0 +1,52 @@
+<mat-card>
+
+  <mat-card-content>
+
+    <section class="left">
+
+      <img
+        [src]="data().img"
+        [alt]="data().name">
+
+      <p>
+        {{ data().description }}
+      </p>
+
+    </section>
+
+    <section class="rigth">
+
+      @for (
+        character of data().combat_style_character;
+        track character.id
+      ) {
+
+        <div class="array">
+
+          <p>
+            ID: {{ character.id }}
+          </p>
+
+          <p>
+            Nombre: {{ character.name }}
+          </p>
+
+          <p>
+            Descripción: {{ character.description }}
+          </p>
+
+        </div>
+
+      } @empty {
+
+        <p>
+          No hay personajes para mostrar
+        </p>
+
+      }
+
+    </section>
+
+  </mat-card-content>
+
+</mat-card>
